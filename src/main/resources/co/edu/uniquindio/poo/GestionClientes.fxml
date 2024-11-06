@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane dividerPositions="0.5686900958466453" layoutX="11.0" layoutY="56.0" orientation="VERTICAL" prefHeight="315.0" prefWidth="579.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="172.0" prefWidth="578.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="14.0" text="Informacion del cliente" />
+                  <Label layoutX="20.0" layoutY="39.0" text="Nombre" />
+                  <Separator layoutX="20.0" layoutY="32.0" prefHeight="1.0" prefWidth="534.0" />
+                  <Label layoutX="20.0" layoutY="68.0" text="Apellido" />
+                  <Label layoutX="299.0" layoutY="36.0" text="Telefono" />
+                  <Label layoutX="297.0" layoutY="102.0" text="Direccion" />
+                  <Label layoutX="297.0" layoutY="65.0" text="Correo" />
+                  <TextField fx:id="txtNombre" layoutX="81.0" layoutY="35.0" prefHeight="25.0" prefWidth="171.0" />
+                  <TextField fx:id="txtApellido" layoutX="81.0" layoutY="64.0" prefHeight="25.0" prefWidth="171.0" />
+                  <TextField fx:id="txtCedula" layoutX="81.0" layoutY="99.0" prefHeight="25.0" prefWidth="171.0" />
+                  <Label layoutX="20.0" layoutY="105.0" text="Cedula" />
+                  <TextField fx:id="txtTelefono" layoutX="358.0" layoutY="32.0" prefHeight="25.0" prefWidth="171.0" />
+                  <TextField fx:id="txtCorreo" layoutX="358.0" layoutY="61.0" prefHeight="25.0" prefWidth="171.0" />
+                  <TextField fx:id="txtDireccion" layoutX="358.0" layoutY="96.0" prefHeight="25.0" prefWidth="171.0" />
+                  <Separator layoutX="14.0" layoutY="136.0" prefHeight="3.0" prefWidth="534.0" />
+                  <Button fx:id="btnAgregarCliente" layoutX="38.0" layoutY="144.0" mnemonicParsing="false" onAction="#actAgregarCliente" text="Agregar Cliente" />
+                  <Button fx:id="btnActualizarCliente" layoutX="414.0" layoutY="143.0" mnemonicParsing="false" onAction="#actActualizarCliente" text="Actualizar Cliente" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="161.0" prefWidth="577.0">
+               <children>
+                  <TableView fx:id="tblCliente" layoutX="3.0" layoutY="3.0" prefHeight="125.0" prefWidth="570.0">
+                    <columns>
+                      <TableColumn fx:id="clmNombre" prefWidth="75.0" text="Nombre" />
+                      <TableColumn fx:id="ClmApellido" prefWidth="75.0" text="Apellido" />
+                        <TableColumn fx:id="ClmCedula" prefWidth="75.0" text="Cedula" />
+                        <TableColumn fx:id="ClmTelefono" prefWidth="75.0" text="Telefono" />
+                        <TableColumn fx:id="ClmCorreo" prefWidth="75.0" text="Correo" />
+                        <TableColumn fx:id="ClmDireccion" prefWidth="75.0" text="Direccion" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+      <Label layoutX="215.0" layoutY="20.0" text="Gestion de Clientes">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEliminarCliente" layoutX="487.0" layoutY="379.0" mnemonicParsing="false" onAction="#actEliminarCliente" text="Eliminar Cliente" />
+   </children>
+</AnchorPane>
