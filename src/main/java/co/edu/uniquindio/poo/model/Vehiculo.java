@@ -1,6 +1,6 @@
 package co.edu.uniquindio.poo.model;
 
-public class Vehiculo{
+public abstract class Vehiculo{
     private String numeroMatricula;
     private String marca;
     private String modelo;
@@ -40,4 +40,6 @@ public class Vehiculo{
     public void setAnioFabricacion(String anioFabricacion){
         this.anioFabricacion = anioFabricacion;
     }
+
+    public abstract Double calcularCostoReserva(Integer dias);
 }
